@@ -107,5 +107,6 @@ bindkey '^[[3~' delete-char # delete key
 
 # Aliases
 alias vim="nvim"
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
