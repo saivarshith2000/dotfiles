@@ -7,8 +7,6 @@ call plug#begin('~/.nvim/plugins')
 Plug 'morhetz/gruvbox'
 " better syntax highlighting
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
-" auto complete monster
-Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 " emmet
 Plug 'mattn/emmet-vim'
 " nerdtree
@@ -19,18 +17,24 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 "nerdtree git plugin
 Plug 'Xuyuanp/nerdtree-git-plugin'
-"fzf - fuzzy finder
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
 "commenter
 Plug 'tpope/vim-commentary'
+" brackets
+Plug 'jiangmiao/auto-pairs'
+"deoplete
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 call plug#end()
 
 " Source other configs
-source ~/.config/nvim/coc_set.vim
+" source ~/.config/nvim/coc_set.vim
 source ~/.config/nvim/nerdtree_set.vim
 source ~/.config/nvim/keybinds.vim
+
+"start deoplete
+let g:deoplete#enable_at_startup = 1
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " highlight current line
 set termguicolors
@@ -55,7 +59,7 @@ colo gruvbox
 let g:gruvbox_contrast_dark = 'hard'
 
 " line numbers
-set number
+set number relativenumber
 set nu
 
 " emmet settings

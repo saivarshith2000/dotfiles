@@ -1,0 +1,42 @@
+icons = "awesome"
+
+[theme]
+name = "slick"
+[theme.overrides]
+# All the colors are lifted from gruvbox
+idle_bg = "#282828"
+idle_fg = "#fbfbfb"
+info_bg = "#fabd2f"
+info_fg = "#282828"
+good_bg = "#b8bb26"
+good_fg = "#282828"
+warning_bg = "#fe8019"
+warning_fg = "#282828"
+critical_bg = "#fb4934"
+critical_fg = "#282828"
+
+[[block]]
+block = "focused_window"
+max_width = 21
+
+[[block]]
+block = "memory"
+display_type = "memory"
+format_mem = "{Mup}%"
+
+[[block]]
+block = "cpu"
+interval = 1
+format = "{utilization}% {frequency}GHz"
+
+[[block]]
+block = "pacman"
+interval = 10
+
+[[block]]
+block = "sound"
+
+[[block]]
+block = "time"
+interval = 60
+format = "%d %b %m/%Y %I:%M %p"
