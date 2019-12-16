@@ -155,7 +155,7 @@ bindsym $mod+r mode "resize"
 # UI tweaks
 font pango:Noto Sans Bold 10
 focus_follows_mouse no
-default_border normal 2
+default_border normal 3
 
 set $wk1 ""
 set $wk2 ""

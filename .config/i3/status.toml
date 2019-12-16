@@ -17,7 +17,7 @@ critical_fg = "#282828"
 
 [[block]]
 block = "focused_window"
-max_width = 21
+max_width = 64
 
 [[block]]
 block = "memory"
