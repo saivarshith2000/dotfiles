@@ -9,7 +9,11 @@ Plug 'morhetz/gruvbox'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 " emmet
 Plug 'mattn/emmet-vim'
-" nerdtree
+" tabbar
+Plug 'drmingdrmer/vim-tabbar'
+" colors preview
+Plug 'chrisbra/Colorizer'
+"nerdtree
 Plug 'scrooloose/nerdtree'
 " devicons
 Plug 'ryanoasis/vim-devicons'
@@ -35,6 +39,12 @@ source ~/.config/nvim/keybinds.vim
 let g:deoplete#enable_at_startup = 1
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" tab related
+set tabstop=4
+" There must be a space after the last character of the next line
+set listchars=tab:\|\ 
+set list
 
 " highlight current line
 set termguicolors
