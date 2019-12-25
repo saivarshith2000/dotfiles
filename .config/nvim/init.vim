@@ -9,8 +9,8 @@ Plug 'morhetz/gruvbox'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 " emmet
 Plug 'mattn/emmet-vim'
-" tabbar
-Plug 'drmingdrmer/vim-tabbar'
+" tabbar (supplied by vim-airline)
+" Plug 'drmingdrmer/vim-tabbar'
 " colors preview
 Plug 'chrisbra/Colorizer'
 "nerdtree
@@ -27,13 +27,16 @@ Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
 "deoplete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-
+"statusbar
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " Source other configs
 " source ~/.config/nvim/coc_set.vim
-source ~/.config/nvim/nerdtree_set.vim
+source ~/.config/nvim/nerdtree.vim
 source ~/.config/nvim/keybinds.vim
+source ~/.config/nvim/airline.vim
 
 "start deoplete
 let g:deoplete#enable_at_startup = 1
@@ -42,6 +45,7 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " tab related
 set tabstop=4
+set shiftwidth=4
 " There must be a space after the last character of the next line
 set listchars=tab:\|\ 
 set list
@@ -65,7 +69,7 @@ set encoding=UTF-8
 
 " color scheme options
 syntax on
-colo gruvbox
+color gruvbox
 let g:gruvbox_contrast_dark = 'hard'
 
 " line numbers

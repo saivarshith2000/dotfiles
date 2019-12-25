@@ -32,4 +32,4 @@ let NERDTreeMouseMode=3
 let NERDTreeIgnore=['.git$[[dir]]', '.swp']
 
 " remove conflict with bd
-map <C-w> :bp<cr>:bd #<cr>
+map <C-q> :bp<cr>:bd #<cr>
