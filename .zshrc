@@ -107,9 +107,8 @@ bindkey '^[[3~' delete-char # delete key
 
 # Aliases
 alias vim="nvim"
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+ls='ls --color=tty'
+grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 
 # theming
 # Base16 Shell
