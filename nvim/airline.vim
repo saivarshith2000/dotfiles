@@ -39,4 +39,4 @@ let g:airline_symbols.linenr = ''
 
 " set powerline theme
 " let g:airline_theme='gruvbox'
-let g:airline_theme='base16_chalk'
+let g:airline_theme='base16_default'
