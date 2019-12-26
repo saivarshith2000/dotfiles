@@ -34,7 +34,6 @@ Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " Source other configs
-" source ~/.config/nvim/coc_set.vim
 source ~/.config/nvim/nerdtree.vim
 source ~/.config/nvim/keybinds.vim
 source ~/.config/nvim/airline.vim
@@ -55,6 +54,7 @@ set list
 set termguicolors
 set cursorline
 hi cursorline cterm=none term=none
+hi VertSplit ctermbg=None guibg=None
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 highlight CursorLine guibg=#303000 ctermbg=234
@@ -67,15 +67,16 @@ filetype plugin on
 
 " text encoding
 set encoding=UTF-8
+set fillchars+=vert:│
 
 " color scheme options
 syntax enable
-let base16colorspace=256
-if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
-endif
-" color gruvbox
+" let base16colorspace=256
+" if filereadable(expand("~/.vimrc_background"))
+"   let base16colorspace=256
+"   source ~/.vimrc_background
+" endif
+color gruvbox
 let g:gruvbox_contrast_dark = 'hard'
 
 " line numbers
