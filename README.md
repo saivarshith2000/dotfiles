@@ -1,6 +1,13 @@
 ### Dotfiles
 This repository contains all the dotfiles that I use across various machines.
 
+## Box Info:
+1. Os: Archlabs Arch linux
+2. WM: i3 with picom
+3. Editor: NeoVim
+4. Terminal: Alacritty
+5. Shell: zsh
+
 ### How it works
 1. All the files in this repository all hard links to actual config files I use
 2. When I change a config, I come back to this repo and push it
