@@ -251,15 +251,15 @@ bindsym $mod+ctrl+l exec "source ~/.lock.sh"
 
 
 # startup applications
+# display config
+exec --no-startup-id xrandr --output DP-1 --left-of HDMI-1 --auto
 # compton
-exec_always --no-startup-id "picom -b"
+exec_always --no-startup-id "picom --config ~/.config/picom.conf"
 # wallpaper
 exec_always --no-startup-id feh --randomize --bg-fill ~/.config/wallpapers/ &
 # network manager
 exec --no-startup-id nm-applet &
 # redshift
 exec --no-startup-id redshift-gtk
-# display config
-exec --no-startup-id xrandr --output DP-1 --left-of HDMI-1 --auto
 # switch on numlock on startup
 exec_always --no-startup-id numlockx on

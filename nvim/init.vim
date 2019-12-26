@@ -4,7 +4,6 @@
 
 call plug#begin('~/.nvim/plugins')
 " gruvbox theme
-Plug 'chriskempson/base16-vim'
 Plug 'morhetz/gruvbox'
 " better syntax highlighting
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
@@ -29,14 +28,15 @@ Plug 'jiangmiao/auto-pairs'
 "deoplete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 "statusbar
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
+Plug 'taohexxx/lightline-buffer'
 call plug#end()
 
 " Source other configs
 source ~/.config/nvim/nerdtree.vim
 source ~/.config/nvim/keybinds.vim
-source ~/.config/nvim/airline.vim
+" source ~/.config/nvim/airline.vim
+source ~/.config/nvim/lightline.vim
 
 "start deoplete
 let g:deoplete#enable_at_startup = 1
@@ -62,6 +62,10 @@ highlight CursorLine guibg=#303000 ctermbg=234
 " set mouse
 set mouse=a
 
+" set split directions
+set splitbelow
+set splitright
+
 " enable file type plugins
 filetype plugin on
 
@@ -71,11 +75,6 @@ set fillchars+=vert:│
 
 " color scheme options
 syntax enable
-" let base16colorspace=256
-" if filereadable(expand("~/.vimrc_background"))
-"   let base16colorspace=256
-"   source ~/.vimrc_background
-" endif
 color gruvbox
 let g:gruvbox_contrast_dark = 'hard'
 

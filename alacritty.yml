@@ -5,6 +5,12 @@
 # Display tabs using this many cells (changes require restart)
 tabspaces: 4
 
+# text padding
+padding:
+    x: 10
+    y: 10
+dynamic_padding: false
+
 # When true, bold text is drawn using the bright variant of colors.
 draw_bold_text_with_bright_colors: true
 
@@ -12,24 +18,24 @@ draw_bold_text_with_bright_colors: true
 font:
   # The normal (roman) font face to use.
   normal:
-    family: "mononoki" # should be "Menlo" or something on macOS.
+    family: "ProFontIIx Nerd Font Mono"
     # Style can be specified to pick a specific face.
-    style: Regular
+    style: regular
 
   # The bold font face
   bold:
-    family: "mononoki" # should be "Menlo" or something on macOS.
+    family: "ProFontIIx Nerd Font Mono"
     # Style can be specified to pick a specific face.
     style: Bold
 
   # The italic font face
   italic:
-    family: "mononoki" # should be "Menlo" or something on macOS.
+    family: "ProFontIIx Nerd Font Mono"
     # Style can be specified to pick a specific face.
     style: Italic
 
   # Point size of the font
-  size: 13
+  size: 12
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
 
