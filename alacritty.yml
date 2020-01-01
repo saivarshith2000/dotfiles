@@ -18,19 +18,19 @@ draw_bold_text_with_bright_colors: true
 font:
   # The normal (roman) font face to use.
   normal:
-    family: "ProFontIIx Nerd Font Mono"
+    family: "Roboto Mono Nerd Font Mono"
     # Style can be specified to pick a specific face.
-    style: regular
+    style: Regular
 
   # The bold font face
   bold:
-    family: "ProFontIIx Nerd Font Mono"
+    family: "Roboto Mono Nerd Font Mono"
     # Style can be specified to pick a specific face.
     style: Bold
 
   # The italic font face
   italic:
-    family: "ProFontIIx Nerd Font Mono"
+    family: "Roboto Mono Nerd Font Mono"
     # Style can be specified to pick a specific face.
     style: Italic
 

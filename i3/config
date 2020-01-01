@@ -212,7 +212,7 @@ client.urgent 		$red 	  $red      $white  $white     $red
 
 # Status bar
 bar {
-    font pango:RobotoMono NF, FontAwesome 11
+    font pango:Roboto Bold 12
     position top
     status_command i3status-rs ~/.config/i3/status.toml
     colors {
@@ -235,6 +235,10 @@ for_window [class=".*"] border pixel 5
 # border_radius 10
 
 # keybinds
+# move monitor to left and right
+bindsym Mod1+l move workspace to output left
+bindsym Mod1+r move workspace to output right
+
 # comment out the original binds(if any of them are conflicting) for this to work
 bindsym $mod+d exec rofi -show run -theme extra
 bindsym $mod+Return exec alacritty
@@ -244,7 +248,7 @@ bindsym $mod+Ctrl+e exec nautilus
 # fullscreen
 bindsym $mod+Shift+s exec scrot ~/Pictures/ScreenShoots/`date +%Y-%m-%d_%H:%M:%S`.png
 # active window
-bindsym $mod+Print exec scrot -u ~/Pictures/ScreenShoots/`date +%Y-%m-%d_%H:%M:%S`.png
+bindsym $mod+Print exec scrot -u ~/Pictures/ScreenShoots/`date +%Y-%m-%d_%H:%M:%S`.pngbindsym $mod+m move workspace to output left
 # select windows
 # lockscreen
 bindsym $mod+ctrl+l exec "source ~/.lock.sh"
