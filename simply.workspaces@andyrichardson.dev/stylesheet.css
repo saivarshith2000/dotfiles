@@ -1,6 +1,6 @@
 /* Add your custom extension styling here */
 .indicator {
-  padding: 0 1em;
+  padding: 0 1.5em;
   color: #888;
 }
 
@@ -15,5 +15,5 @@
 }
 
 .container {
-  margin: 0;
+  margin: 0 0;
 }
