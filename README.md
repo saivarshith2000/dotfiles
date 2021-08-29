@@ -1,16 +1,11 @@
 ### Dotfiles
-This repository contains all the dotfiles that I use across various machines.
+This repository contains the dotfiles that I use across various machines.
 
-## Box Info:
-1. Os: Archlabs Arch linux
-2. WM: i3 with picom
+## System Config:
+1. Os: Pop!Os 21.04
 3. Editor: NeoVim
-4. Terminal: Alacritty
-5. Shell: zsh
+4. Terminal: Gnome-Terminal with Gruvbox theme
+5. Shell: Bash with Starship prompt
 
-### How it works
-1. All the files in this repository all hard links to actual config files I use
-2. When I change a config, I come back to this repo and push it
-3. When I create a new config, I link to an appropriate file in this repo and push it
-4. To use this repo, clone it and you can do cp/ln them to the correct directory on the local machine
-5. That's it. Its not cool or fancy but it works and it works always :)
+## Extentions
+Gnome extensions modified by me are also here. They are not guaranteed to be up to date.
