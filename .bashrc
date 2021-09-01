@@ -118,7 +118,12 @@ fi
 
 # aliases
 alias vim="nvim"
+export MAKEFLAGS=-j$(nproc)
 
+function set_win_title(){
+    echo -ne "\033]0; $(dirname "$PWD") \007"
+}
+starship_precmd_user_func="set_win_title"
 eval "$(starship init bash)"
 
 export NVM_DIR="$HOME/.nvm"
