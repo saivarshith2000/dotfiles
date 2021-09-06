@@ -88,7 +88,7 @@ label-focused-padding = 2
 
 label-occupied = %name%
 label-occupied-background = ${colors.background}
-label-occupied-foreground = #bbb
+label-occupied-foreground = #fff
 label-occupied-padding = 2
 
 label-urgent = %name%
@@ -315,11 +315,11 @@ format-foreground = ${colors.yellow}
 type = internal/date
 interval = 1
 
-date = 
-date-alt = "  﨟  %A, %b %d -"
+date = " 﨟 %a %b %d" 
+date-alt = " 﨟 %a %b %d"
 
-time = "  %I:%M %p  "
-time-alt = "%I:%M:%S %p  "
+time = " %I:%M %p"
+time-alt = " %I:%M %p"
 
 ;format-prefix = ""
 format-prefix-padding = 1
@@ -328,7 +328,7 @@ format-prefix-foreground = #ffffff
 ;format-background = ${colors.background}
 format-foreground = ${colors.white}
 
-label = %date% %time%
+label = %date%  %time%
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/shutdown]
 type = custom/text
