@@ -19,12 +19,11 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 numlockx on
-xset -b off -s 600
 xsetroot -cursor_name left_ptr
 feh --bg-scale ~/Pictures/wallpaper.jpg
-sh ~/.config/bspwm/launch.sh
 killall polybar
 polybar top
 dunst
 picom
+nm-applet
 xrandr --output HDMI-0 --brightness 0.9
