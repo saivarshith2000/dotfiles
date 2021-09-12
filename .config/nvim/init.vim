@@ -9,6 +9,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
 Plug 'jiangmiao/auto-pairs'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'sbdchd/neoformat'
 
 " Initialize plugin system
 call plug#end()
@@ -21,14 +23,16 @@ hi Normal guibg=NONE ctermbg=NONE
 set mouse=a
 set number
 set rnu
+filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
-" kernel standard
 
 " keybinds
 map <Space> <Leader>
 nnoremap <silent> <C-p> :Files<CR>
 nnoremap <silent> <leader>p :Rg<CR>
+nnoremap <leader>m :make<CR>
+nnoremap <leader>m :make<CR>
 
 " clear search on double leader
 nnoremap <leader><Space> :noh<return><esc>
@@ -59,3 +63,16 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 map <C-n> :NERDTreeToggle<CR>  " open and close file tree
 nmap <leader>n :NERDTreeFind<CR>  " open current buffer in file tree
+
+" enable deoplete
+let g:deoplete#enable_at_startup = 1
+
+" Neoformat setings
+" enable clang-format
+" custom setting for clangformat
+let g:neoformat_cpp_clangformat = {
+    \ 'exe': 'clang-format',
+    \ 'args': ['--style="{IndentWidth: 4}"']
+\}
+let g:neoformat_enabled_cpp = ['clangformat']
+let g:neoformat_enabled_c = ['clangformat']
