@@ -42,6 +42,7 @@ width = 100%
 height = 18
 radius = 0.0
 fixed-center = true
+wm-restack = bspwm
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -56,8 +57,9 @@ module-margin-left = 1
 module-margin-right = 1
 
 # font-0 = "Inconsolata Black:size=12;3"
-#font-0 = "BlexMono Nerd Font:size=12:weight=Bold;2"
-font-0 = "SFMono Nerd Font:size=11:weight=Bold;2"
+# font-0 = "BlexMono Nerd Font:size=12:weight=Bold;2"
+# font-0 = "SFMono Nerd Font:size=11:weight=Bold;2"
+font-0 = "Inconsolata Nerd Font:size=12:weight=Bold;2"
 font-1 = "SauceCodePro Nerd Font Mono:size=20;5"
 font-2 = "Material Icons:pixelsize=15;5"
 font-3 = "Sinji:pixelsize=15;5"
